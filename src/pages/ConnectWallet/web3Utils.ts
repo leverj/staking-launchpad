@@ -18,7 +18,7 @@ import {
 
 export enum NetworkChainId {
   'Mainnet' = 1,
-  'Ropsten' = 3,
+  'GluonTest' = 32382,
   'Goerli' = 5,
   'Sepolia' = 11155111,
   'Zhejiang' = 1337803,
@@ -27,7 +27,7 @@ export enum NetworkChainId {
 
 export const NetworkChainIdDict: { [id: string]: number } = {
   Mainnet: 1,
-  Ropsten: 3,
+  GluonTest: 32382,
   Goerli: 5,
   Sepolia: 11155111,
   Zhejiang: 1337803,
@@ -41,7 +41,7 @@ export const NetworkChainIdDict: { [id: string]: number } = {
 
 const supportedNetworks = [
   NetworkChainId.Mainnet,
-  NetworkChainId.Ropsten,
+  NetworkChainId.GluonTest,
   NetworkChainId.Goerli,
   NetworkChainId.Sepolia,
   NetworkChainId.Zhejiang,
@@ -52,11 +52,11 @@ const supportedNetworks = [
 const portisSupportedNetworks = [
   NetworkChainId.Goerli,
   NetworkChainId.Mainnet,
-  NetworkChainId.Ropsten,
+  // NetworkChainId.GluonTest,
 ];
 
 enum Testnet {
-  'Ropsten',
+  'GluonTest',
   'Goerli',
   'Sepolia',
   'Zhejiang',
@@ -69,7 +69,7 @@ enum Mainnet {
 
 export const NetworkNameToChainId: { [key: string]: NetworkChainId } = {
   Mainnet: NetworkChainId.Mainnet,
-  Ropsten: NetworkChainId.Ropsten,
+  GluonTest: NetworkChainId.GluonTest,
   Goerli: NetworkChainId.Goerli,
   Zhejiang: NetworkChainId.Zhejiang,
   Holesky: NetworkChainId.Holesky,

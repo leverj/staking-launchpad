@@ -9,7 +9,7 @@ import invariant from 'tiny-invariant';
 
 const chainIdToNetwork: { [network: number]: string } = {
   1: 'mainnet',
-  3: 'ropsten',
+  3: 'gluonTest',
   5: 'goerli',
 };
 
