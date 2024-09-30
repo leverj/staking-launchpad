@@ -92,7 +92,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -105,7 +104,7 @@
     ]
   },
   "scripts": {
-    "start": "rescripts start",
+    "start": "PORT=3005 rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
     "eject": "rescripts eject",

@@ -251,6 +251,7 @@ const _UploadValidatorPage = ({
     }
   };
 
+  workflow = WorkflowStep.UPLOAD_VALIDATOR_FILE;
   function handleSubmit() {
     if (workflow === WorkflowStep.UPLOAD_VALIDATOR_FILE) {
       dispatchWorkflowUpdate(WorkflowStep.CONNECT_WALLET);
